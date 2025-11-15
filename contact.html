@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>merttura.com</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/webp" href="img/mlogo.webp">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="img/mlogo.webp" alt="logo" class="img-fluid" />
+          <span>merttura.com</span>
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <nav class="navbar-nav mx-auto">
+          <a href="about.html" class="nav-link">About Me</a>
+        </nav>
+        <button class="contact-btn btn" onclick="location.href='contact.html'">Contact</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="contact-section">
+    <div class="contact-left">
+      <h1>Contact</h1>
+    </div>
+
+    <div class="contact-right">
+      <h2>How Can I Help You?</h2>
+      <div id="formAlert"></div>
+      <form method="post" action="contact.php">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Mail Address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="mail@address.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" class="form-control" placeholder="Type your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn btn">Send the Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+  <div class="divider"></div>
+  <p>© 2025 Mert. All rights reserved. Made with 💚 by merttura9</p>
+
+    <div class="social-icons">
+    <a href="https://www.instagram.com/merttura9" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/merttura" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://x.com/merttura0" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+</footer>
+
+<script>
+  // Show a bootstrap alert if redirected with status
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get('status');
+  const alertTarget = document.getElementById('formAlert');
+  if (status === 'success') {
+    alertTarget.innerHTML = '<div class="alert alert-success" role="alert">Mesajınız gönderildi. Teşekkürler!</div>';
+  } else if (status === 'error') {
+    alertTarget.innerHTML = '<div class="alert alert-danger" role="alert">Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.</div>';
+  }
+</script>
+
+<!-- Bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

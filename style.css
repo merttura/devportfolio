@@ -1,0 +1,1031 @@
+/* Genel ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #e5e5f0;
+  background: linear-gradient(135deg, #090a14 0%, #0c0d1b 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.logo span {
+  font-size: 14px;
+  color: #e2e2e8;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d1d1e0;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #6a67ff;
+}
+
+/* Contact butonu */
+.contact-btn {
+  background: linear-gradient(135deg, #4c56ff, #6c63ff);
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6c63ff, #4c56ff);
+}
+
+/* ORTA KISIM */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 80px;              /* daha büyük */
+  font-weight: 300;             /* daha ince font */
+  line-height: 1.1;
+  color: #dedeea;
+  letter-spacing: 1px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #d1d1e0;
+}
+
+
+.subtitle {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #a7a7bb;
+}
+
+.about-btn {
+  margin-top: 30px;
+  background: linear-gradient(135deg, #4c56ff, #6c63ff);
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px 26px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6c63ff, #4c56ff);
+}
+
+.hero {
+  text-align: center;
+  margin-top: 220px; /* yazıyı navbar’dan daha da aşağı indir */
+}
+
+/* logo kısmı */
+.hero-logo {
+  margin-top: 140px; /* yazıyla logo arasında daha fazla boşluk */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo img {
+  width: 900px;         /* LOGO ÇOK BÜYÜK */
+  max-width: 90vw;      /* ekrana göre otomatik ölçeklenir */
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.hero-logo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.hero p {
+  margin-top: 45px; /* yazıyı biraz aşağıya alır */
+  font-size: 20px;
+  font-weight: 300;
+  color: #a7a7bb;
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none; /* alt çizgiyi kaldırır */
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #4c56ff, #6c63ff);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  text-decoration: none; /* hover'da da çizgi çıkmasın */
+}
+
+/* SKILLS SECTION */
+/* SKILLS SECTION */
+.skills-section {
+  text-align: center;
+  margin-top: 160px; /* logodan sonra biraz daha fazla boşluk */
+  padding: 0 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-section h2 {
+  font-size: 34px; /* daha büyük başlık */
+  font-weight: 400; /* hafif kalın */
+  color: #e3e3f3;
+  margin-bottom: 35px; /* başlık ile açıklama arası boşluk */
+  letter-spacing: 0.5px;
+}
+
+.skills-section p {
+  font-size: 17px; /* daha zarif yazı boyutu */
+  font-weight: 300;
+  color: #b2b2c6;
+  line-height: 1.9; /* satır arası boşluk */
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* MODERN CERTIFICATE SECTION */
+.certificates-modern {
+  text-align: center;
+  padding: 100px 60px;
+}
+
+.certificates-modern h2 {
+  color: #e5e4fa;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  justify-items: center;
+}
+
+.cert-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  overflow: hidden;
+  max-width: 550px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.45);
+}
+
+.cert-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cert-info {
+  padding: 20px 25px 30px;
+  text-align: center;
+}
+
+.cert-info h3 {
+  color: #f0efff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cert-info p {
+  color: #9c9ab6;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* HERO (üstte bozulduysa garanti için) */
+.hero {
+  text-align: center;
+  margin-top: 220px;
+}
+.hero h1 {
+  font-size: 64px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.hero h1 span { font-weight: 700; }
+.hero p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #cccccc;
+  margin-top: 45px;
+}
+
+/* FEATURES - sade, çevresiz kartlar (görsellerin etrafında ekstra kaplama yok) */
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 40px;
+}
+
+/* Kart container artık transparan, kaplama yok */
+.feature-card {
+  background: transparent; /* çevre arka plan kaldırıldı */
+  border: none;            /* çevre border kaldırıldı */
+  padding: 0;              /* iç boşluk kaldırıldı */
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Görsel kendisi kart gibi davranır: köşe, gölge hover */
+.feature-card img {
+  width: 100%;
+  height: 220px;           /* istersen yüksekliği ayarla */
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;     /* görselin kendisi yuvarlak kenarlı */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: none;        /* normalde gölge yok */
+}
+
+/* Hover: hafif yükselme + morumsu glow */
+.feature-card:hover img {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(108, 99, 255, 0.18);
+}
+
+/* Başlık & açıklama (içerik varsa) */
+.feature-card h3 {
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.feature-card p {
+  color: #b8b8cc;
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+/* Responsive: 3 kolondan 1 kolona düşsün */
+@media (max-width: 1000px) {
+  .features-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .feature-card img { height: auto; max-height: 420px; }
+}
+
+.future-text {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.future-text h2 {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.future-text h2 span {
+  display: block;
+  font-weight: 700;
+  color: #6c63ff; /* istersen burayı da beyaz yapabiliriz */
+}
+
+/* --- çizgi kısmı --- */
+.divider {
+  width: 30%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2); /* navbar çizgisi gibi soft beyaz */
+  margin: 30px auto 0 auto;
+  border-radius: 1px;
+}
+
+.footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.footer span {
+  color: #6c63ff; /* mor tonlu vurgu */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer span:hover {
+  color: #ffffff; /* hover'da beyaz olur */
+}
+
+/* ABOUT SAYFASI BAŞLIK KISMI */
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+  flex-direction: column;
+}
+
+.about-hero h1 {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 300;
+  color: #e5e5f0;
+  margin-top: 180px; /* yazıyı navbar'dan aşağı indirir */
+  letter-spacing: 1px;
+}
+
+
+/* ABOUT FOTOĞRAF KISMI */
+.about-photo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 800px;         /* büyük boy */
+  max-width: 85vw;      /* ekran boyutuna göre küçülür */
+  border-radius: 20px;  /* yumuşak kenarlar */
+  opacity: 0.95;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+.about-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.about-story {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  margin: 160px 100px;
+}
+
+.story-left h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #e5e5f0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.story-right {
+  max-width: 600px;
+}
+
+.story-right p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #bfbfd4;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5vh 12vw; /* daha az boşluk */
+  color: white;
+  gap: 80px; /* sol ve sağ arası mesafe */
+}
+
+.contact-left h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #dedeea;
+  margin-top: 40px; /* 40’tan 10’a düşürüldü */
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.contact-left {
+  flex: 1;
+  padding-left: 120px; /* yazıyı biraz sağa alır */
+}
+
+
+
+.contact-right {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem 3rem;
+  border-radius: 1.2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(140, 82, 255, 0.15);
+}
+
+.contact-right h2 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: #cfcfcf;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #a370ff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  border: none;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  box-shadow: 0 0 15px rgba(140, 82, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0 40px 0; /* üst ve alt boşluk biraz daha dengeli */
+  margin-top: 60px;       /* sayfanın ana içeriğiyle arasına boşluk */
+}
+
+footer .divider {
+  width: 30%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 70px auto; /* çizgiyle yazı arasına 20px boşluk eklendi */
+}
+
+footer p {
+  color: #ccc;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none; /* alt çizgiyi kaldırır */
+  color: inherit; /* rengin değişmesini önler */
+}
+
+.logo-link img {
+  width: 28px;
+  height: 28px;
+}
+
+.logo-link span {
+  font-size: 14px;
+  color: #e2e2e8;
+  font-weight: 400;
+  position: relative;
+  top: 1px; /* yazıyı çok hafif yukarı alır, hizalamayı düzeltir */
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a {
+  color: #d1d1e0;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #6a67ff;
+  transform: scale(1.2);
+}
+
+
+/* TAM EKRAN LOADER */
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: #090a14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+/* LOGO */
+.loader img {
+  width: 700px;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* LOGO GİRİŞ ANİMASYONU */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* LOADER KAYBOLMA ANİMASYONU */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+/* ================================ */
+/* MOBILE RESPONSIVENESS & TEXT FIXES */
+/* ================================ */
+
+/* Fix navbar toggler button color */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Fix About Me nav link visibility */
+.nav-link {
+  color: #d1d1e0 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6a67ff !important;
+}
+
+/* Fix form input text visibility */
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff !important; /* Force white text */
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaaaaa !important; /* Light gray placeholder */
+  opacity: 0.8;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #a370ff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+}
+
+/* MOBILE MEDIA QUERIES */
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 14px 40px;
+    margin: 0 40px;
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+  }
+  
+  .certificates-modern {
+    padding: 80px 40px;
+  }
+  
+  .about-story {
+    margin: 120px 60px;
+    gap: 60px;
+  }
+  
+  .contact-section {
+    padding: 4vh 8vw;
+    gap: 60px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 12px 20px;
+    margin: 0 20px;
+  }
+  
+  .hero {
+    margin-top: 150px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero-logo img {
+    width: 600px;
+  }
+  
+  .skills-section {
+    margin-top: 120px;
+    padding: 0 15px;
+  }
+  
+  .skills-section h2 {
+    font-size: 28px;
+  }
+  
+  .about-story {
+    flex-direction: column;
+    margin: 100px 40px;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .story-left h2 {
+    font-size: 36px;
+  }
+  
+  .contact-section {
+    flex-direction: column;
+    padding: 3vh 6vw;
+    gap: 40px;
+  }
+  
+  .contact-left {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .contact-left h1 {
+    font-size: 4rem;
+    margin-top: 20px;
+  }
+  
+  .contact-right {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    margin: 0 15px;
+  }
+  
+  .hero {
+    margin-top: 100px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  
+  .hero-logo {
+    margin-top: 80px;
+  }
+  
+  .hero-logo img {
+    width: 400px;
+  }
+  
+  .skills-section {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+  
+  .skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .skills-section p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  
+  .certificates-modern {
+    padding: 60px 20px;
+  }
+  
+  .certificates-modern h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .future-text {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .future-text h2 {
+    font-size: 36px;
+  }
+  
+  .features-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .about-hero h1 {
+    font-size: 42px;
+    margin-top: 120px;
+    padding: 0 20px;
+  }
+  
+  .about-photo {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .about-photo img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .about-story {
+    margin: 80px 20px;
+    gap: 30px;
+  }
+  
+  .story-left h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .story-right p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .contact-left h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+  
+  .contact-section {
+    padding: 2vh 4vw;
+  }
+  
+  .contact-right {
+    padding: 1.5rem 2rem;
+  }
+  
+  .contact-right h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    padding: 40px 20px 30px 20px;
+  }
+}
+
+/* Very small mobile phones */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero-logo img {
+    width: 300px;
+  }
+  
+  .skills-section h2 {
+    font-size: 20px;
+  }
+  
+  .skills-section p {
+    font-size: 14px;
+  }
+  
+  .certificates-modern h2 {
+    font-size: 24px;
+  }
+  
+  .future-text h2 {
+    font-size: 28px;
+  }
+  
+  .about-hero h1 {
+    font-size: 32px;
+    margin-top: 100px;
+  }
+  
+  .story-left h2 {
+    font-size: 24px;
+  }
+  
+  .contact-left h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-right {
+    padding: 1rem 1.5rem;
+  }
+  
+  .loader img {
+    width: 400px;
+  }
+}
+
+/* Landscape mobile orientation fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    margin-top: 60px;
+  }
+  
+  .hero-logo {
+    margin-top: 40px;
+  }
+  
+  .hero-logo img {
+    width: 250px;
+  }
+  
+  .about-hero h1 {
+    margin-top: 60px;
+  }
+  
+  .about-photo {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
