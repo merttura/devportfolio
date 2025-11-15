@@ -99,14 +99,6 @@ cd portfolio
 
 No installation required — simply open the HTML file:
 
-# Windows
-start index.html
-
-# macOS
-open index.html
-
-# Linux
-xdg-open index.html
 
 🌍 Deployment
 
