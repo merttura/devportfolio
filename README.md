@@ -98,19 +98,13 @@ Copyright area
 
 ----------------------------------------------------------------------------------------------------
 
-🚀 Demo
+🛠️ Technologies Used
 
 ----------------------------------------------------------------------------------------------------
-
-Live demo link will be added soon.
-
-🛠️ Technologies Used
 
 HTML5
 
 CSS3 (Custom styling)
-
-Vanilla JavaScript
 
 AOS / ScrollReveal for animations
 
@@ -118,7 +112,11 @@ Font Awesome for icons
 
 Google Fonts
 
+----------------------------------------------------------------------------------------------------
+
 📁 Project Setup
+
+----------------------------------------------------------------------------------------------------
 
 Clone the repository:
 
@@ -128,8 +126,11 @@ cd portfolio
 
 No installation required — simply open the HTML file:
 
+----------------------------------------------------------------------------------------------------
 
 🌍 Deployment
+
+----------------------------------------------------------------------------------------------------
 
 This project is easy to deploy on:
 
@@ -141,17 +142,18 @@ GitHub Pages
 
 Just upload the project files — no build step needed.
 
+----------------------------------------------------------------------------------------------------
+
 👨‍💻 Author
+
+----------------------------------------------------------------------------------------------------
 
 Mert Tura
 GitHub: https://github.com/merttura
 
 Portfolio: (this site)
 
-📄 License
-
-This project is licensed under the MIT License.
-You are free to use, modify, and distribute it.
+----------------------------------------------------------------------------------------------------
 
 🎁 Acknowledgments
 
